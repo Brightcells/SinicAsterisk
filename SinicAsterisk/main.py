@@ -33,13 +33,13 @@ class SinicAsterisk(object):
         pass
 
     def phone(self, message):
-        length = len(message)
+        length = len(message or '')
         if length == 11:
             message = re.sub(r'(\d{3})(\d{4})(\d{4})', r'\1****\3', message)
         return message
 
     def identity_card(self, message):
-        length = len(message)
+        length = len(message or '')
         if length == 18:
             message = re.sub(r'(\d{10})(\d{4})(\d{3}(\d|X|x))', r'\1****\3', message)
         elif length == 15:

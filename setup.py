@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from __future__ import with_statement
+
 from setuptools import setup
 
 
@@ -11,7 +12,7 @@ setup(
     name='SinicAsterisk',
     version=version,
     keywords='',
-    description="Asterisk Sinic Name & Phone & IDCard & etc",
+    description='Asterisk Sinic Name & Phone & IDCard & etc',
     long_description=open('README.rst').read(),
 
     url='https://github.com/Brightcells/SinicAsterisk',
